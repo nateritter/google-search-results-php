@@ -1,0 +1,18 @@
+parameters:
+
+    paths:
+        - .
+
+    # The level 9 is the highest level
+    level: 5
+
+    ignoreErrors:
+        - '#Method RestClient::rewind\(\) with return type void returns mixed but should not return anything\.#'
+        - '#Method RestClient::next\(\) with return type void returns mixed but should not return anything\.#'
+
+    excludePaths:
+        - ./vendor
+        - ./example_composer
+        - ./test
+
+    # checkMissingIterableValueType: false

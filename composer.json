@@ -21,13 +21,11 @@
     ],
     "homepage": "http://github.com/serpapi/google-search-results-php",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Victor Benarbia",
-            "role": "Developer",
-            "email": "victor@serpapi.com"
-        }
-    ],
+    "authors": [{
+        "name": "Victor Benarbia",
+        "role": "Developer",
+        "email": "victor@serpapi.com"
+    }],
     "support": {
         "issues": "http://github.com/serpapi/google-search-results-php/issues"
     },
@@ -38,7 +36,8 @@
     },
     "require-dev": {
         "php": "^5.5 || ^7.0 || ^8.0",
-        "phpunit/phpunit": "^9.3"
+        "phpunit/phpunit": "^9.3",
+        "phpstan/phpstan": "^1.7"
     },
     "autoload": {
         "files": [
