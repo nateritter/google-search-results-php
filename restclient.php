@@ -67,7 +67,8 @@ class RestClient implements Iterator, ArrayAccess
     }
 
     // Iterable methods:
-    public function rewind(): mixed
+    #[\ReturnTypeWillChange]
+    public function rewind()
     {
         $this->decode_response();
         return reset($this->decoded_response);
@@ -83,7 +84,8 @@ class RestClient implements Iterator, ArrayAccess
         return key($this->decoded_response);
     }
 
-    public function next(): mixed
+    #[\ReturnTypeWillChange]
+    public function next()
     {
         return next($this->decoded_response);
     }
